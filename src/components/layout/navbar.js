@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="p-2 mb-3">
       <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-around" }}>
         {/* Logo */}
-        <Link to="/" className="px-5 py-5 w-4">
+        <Link to="/" className="px-5 py-5 w-3">
           <img src={davstudioLogo} alt="Estudio de Interiorismo" style={{ width: "100%"}}/>
         </Link>
 
