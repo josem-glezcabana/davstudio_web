@@ -12,11 +12,11 @@ export default function Navbar() {
 
         {/* Navegacion */}
         <nav className="flex" style={{ gap: "2rem" }}>
-          <NavLink to="/productos" className="px-5 py-3 no-underline text-900 text-xl font-bold uppercase">
+          <NavLink to="/products" className="px-5 py-3 no-underline text-900 text-xl font-bold uppercase">
             Productos
           </NavLink>
 
-          <NavLink to="/contacto" className="px-5 py-3 no-underline text-900 text-xl font-bold uppercase">
+          <NavLink to="/contact" className="px-5 py-3 no-underline text-900 text-xl font-bold uppercase">
             Contacto
           </NavLink>
 
