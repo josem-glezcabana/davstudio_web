@@ -1,17 +1,20 @@
+import imageUrbanBloom from "../assets/seats/urban_bloom/AXO.png";
+import imageNomad01 from "../assets/seats/nomad_01/02.png";
+
 export const products = [
   {
-    id: "asiento-01",
+    id: "urban-bloom",
     name: "URBAN BLOOM",
     description: "Lámpara de diseño minimalista para interiores contemporáneos.",
-    // image: "/assets/images/products/lamp-01.jpg",
+    image: imageUrbanBloom,
     dimensions: "45 x 30 x 30 cm",
     colors: ["Negro", "Blanco", "Gris"]
   },
   {
-    id: "asiento-02",
+    id: "nomad-01",
     name: "NOMAD 01",
     description: "Iluminación cálida con acabados premium.",
-    // image: "/assets/images/products/lamp-02.jpg",
+    image: imageNomad01,
     dimensions: "60 x 35 x 35 cm",
     colors: ["Madera", "Negro"]
   }
