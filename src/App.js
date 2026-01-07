@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import Layout from './components/layout/layout'
 import ProductList from './components/products/productList';
-// import ProductDetail from './components/products/productDetail';
+import ProductDetail from './components/products/productDetail';
 import Contact from './components/contact/contact';
 // import About from './components/about/about';
 
@@ -23,16 +23,16 @@ function App() {
         <Routes>
           {/* Ruta con el layout */}
           <Route element={<Layout />}>
-            <Route path="/" element={<Home/>} />
-            <Route path='/products' element={<ProductList/>} />
-            {/* <Route path='/products/:id' element={<ProductDetail/>} /> */}
-            <Route path='/contact' element={<Contact/>} />
+            <Route path="/" element={<Home />} />
+            <Route path='/products' element={<ProductList />} />
+            <Route path='/products/:id' element={<ProductDetail />} />
+            <Route path='/contact' element={<Contact />} />
             {/*<Route path='/about' element={<About/>} /> */}
           </Route>
         </Routes>
-      
+
       </BrowserRouter>
-    
+
     </div>
   );
 }
