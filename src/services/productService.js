@@ -5,18 +5,28 @@ export const products = [
   {
     id: "urban-bloom",
     name: "URBAN BLOOM",
-    description: "Asiento",
+    product_group: "Asiento",
     image: imageUrbanBloom,
     dimensions: "115 x 40 x 95 cm",
-    colors: ["Naranja", "Amarillo", "Violeta", "Azul", "Rojo"]
+    colors: [
+      { name: "Naranja", hex: "#fe9e2e"},
+      { name: "Amarillo", hex: "#fff44f"},
+      { name: "Violeta", hex: "#8a36d2"},
+      { name: "Azul", hex: "#3969be"},
+      { name: "Rojo", hex: "#FF0000"}
+    ]
   },
   {
     id: "nomad-01",
     name: "NOMAD 01",
-    description: "Iluminación cálida con acabados premium.",
+    product_group: "Iluminación cálida con acabados premium.",
     image: imageNomad01,
     dimensions: "60 x 35 x 35 cm",
-    colors: ["Madera", "Negro"]
+    colors: [
+      { name: "Rosa", hex: "#e302a6"},
+      { name: "Naranja", hex: "#fe9e2e"},
+      { name: "Azul", hex: "#3969be"},
+    ]
   }
 ];
 

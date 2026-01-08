@@ -28,7 +28,7 @@ export default function ProductDetail() {
                         </h1>
 
                         <p className="text-700 line-height-3 mb-4">
-                            {product.description}
+                            {product.product_group}
                         </p>
 
                         <p className="text-900 mb-4">
@@ -41,13 +41,15 @@ export default function ProductDetail() {
                                 <strong>Acabados:</strong>
                             </p>
 
-                            <div className="flex gap-2 flex-wrap">
+                            <div className="flex gap-3 flex-wrap">
                                 {product.colors.map(color => (
-                                    <button key={color} onClick={() => setSelectedColor(color)}
-                                        className={`px-3 py-2 border-1 border-round-sm cursor-pointer
-                      ${selectedColor === color ? "border-900 text-900" : "border-300 text-700"} hover:border-500`}>
-                                        {color}
-                                    </button>
+                                    <button key={color.name} onClick={() => setSelectedColor(color)}
+                                        className={`w-2rem h-2rem cursor-pointer border-circle border-none
+                      ${selectedColor === color.name ? "border-900" : "border-300"} hover:border-500`}
+                                        style={{ backgroundColor: color.hex }}
+                                        title={color.name}
+                                        aria-label={color.name}
+                                    />
                                 ))}
                             </div>
                         </div>
