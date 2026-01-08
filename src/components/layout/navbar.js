@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import davstudioLogo from "../../assets/davstudio_logo_sin_relleno.jpeg";
+import davstudioLogo from "../../assets/LOGO_DAV.png";
 
 export default function Navbar() {
   return (
