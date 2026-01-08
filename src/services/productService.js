@@ -5,7 +5,7 @@ export const products = [
   {
     id: "urban-bloom",
     name: "URBAN BLOOM",
-    product_group: "Asiento",
+    designer: "David Prol Gómez",
     image: imageUrbanBloom,
     dimensions: "115 x 40 x 95 cm",
     colors: [
@@ -19,13 +19,13 @@ export const products = [
   {
     id: "nomad-01",
     name: "NOMAD 01",
-    product_group: "Iluminación cálida con acabados premium.",
+    designer: "David Prol Gómez",
     image: imageNomad01,
     dimensions: "60 x 35 x 35 cm",
     colors: [
       { name: "Rosa", hex: "#e302a6"},
       { name: "Naranja", hex: "#fe9e2e"},
-      { name: "Azul", hex: "#3969be"},
+      { name: "Azul", hex: "#328AF6FF"},
     ]
   }
 ];

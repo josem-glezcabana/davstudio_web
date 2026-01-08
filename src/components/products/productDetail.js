@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { getProductById } from "../../services/productService";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ProductDetail() {
     const { id } = useParams();
@@ -23,12 +24,15 @@ export default function ProductDetail() {
 
                     {/* Información del producto */}
                     <div className="col-12 md:col-6 pl-8">
-                        <h1 className="text-3xl text-900 mb-4">
+                        <h1 className="text-8xl font-medium mb-4">
                             {product.name}
                         </h1>
 
-                        <p className="text-700 line-height-3 mb-4">
-                            {product.product_group}
+                        <p className="mb-4" style={{ color: "black" }}>
+                            <strong>Diseño </strong>
+                            <Link to={'/about'} className="hover:underline cursor-pointer" style={{ color: "#555", marginLeft: "0.5rem" }}>
+                                {product.designer}
+                            </Link>
                         </p>
 
                         <p className="text-900 mb-4">
