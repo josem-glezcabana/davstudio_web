@@ -22,7 +22,7 @@ export default function ProductDetail() {
                     </div>
 
                     {/* Información del producto */}
-                    <div className="col-12 md:col-6">
+                    <div className="col-12 md:col-6 pl-8">
                         <h1 className="text-3xl text-900 mb-4">
                             {product.name}
                         </h1>

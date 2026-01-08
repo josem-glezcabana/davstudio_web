@@ -8,10 +8,10 @@ export default function ProductList() {
         <section className="surface-0">
             <div className="max-w-screen-xl mx-auto p-5">
                 {/* Productos */}
-                <h1 className="text-3xl text-900 mb-6">Productos</h1>
+                <h1 className="text-3xl text-900 text-center mb-6">Productos</h1>
 
                 {/* Lista de productos */}
-                <div className="grid">
+                <div className="grid justify-content-center">
                     {productList.map(product => (
                         <div key={product.id} className="col-12 sm:col-6 md:col-4 lg:col-3">
                             <ProductCard product={product} />
