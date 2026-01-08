@@ -6,7 +6,7 @@ import Layout from './components/layout/layout'
 import ProductList from './components/products/productList';
 import ProductDetail from './components/products/productDetail';
 import Contact from './components/contact/contact';
-// import About from './components/about/about';
+import About from './components/about/about';
 
 // CSS de PrimeReact
 import 'primereact/resources/themes/saga-blue/theme.css';
@@ -27,7 +27,7 @@ function App() {
             <Route path='/products' element={<ProductList />} />
             <Route path='/products/:id' element={<ProductDetail />} />
             <Route path='/contact' element={<Contact />} />
-            {/*<Route path='/about' element={<About/>} /> */}
+            <Route path='/about' element={<About/>} />
           </Route>
         </Routes>
 
