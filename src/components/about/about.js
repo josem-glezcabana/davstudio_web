@@ -1,4 +1,3 @@
-// import owner from '../../assets/cara_david.JPG';
 import ownerPhoto from '../../assets/david_sesi.jpg';
 
 export default function About() {

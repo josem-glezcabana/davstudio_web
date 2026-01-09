@@ -2,27 +2,76 @@ import { useParams } from "react-router-dom";
 import { getProductById } from "../../services/productService";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+// galeria de imaxes
+import { Galleria } from 'primereact/galleria';
 
 export default function ProductDetail() {
     const { id } = useParams();
     const product = getProductById(id);
     const [selectedColor, setSelectedColor] = useState(product.colors[0]);
 
-    // Si no se encuentra el producto, mostrar un mensaje
+    // Si non se encontra o produto, mostrar un mensaxe
     if (!product) {
         return <p>Producto no encontrado</p>;
     }
+
+    // Opciones responsivas para a galería de imaxes
+    const responsiveOptions = [
+        {
+            breakpoint: '1024px',
+            numVisible: 5
+        },
+        {
+            breakpoint: '768px',
+            numVisible: 3
+        },
+        {
+            breakpoint: '560px',
+            numVisible: 1
+        }
+    ];
+
+    // Plantilla para a imaxe principal da galería
+    const itemTemplate = (item) => {
+        return (
+            <img
+                src={item}
+                alt={product.name}
+                className="w-full border-round-sm"
+            />
+        );
+    };
+
+    // Plantilla para as miniaturas da galería
+    const thumbnailTemplate = (item) => {
+        return (
+            <img
+                src={item}
+                alt={product.name}
+                className="w-full border-round-sm"
+            />
+        );
+    };
 
     return (
         <section className="surface-0">
             <div className="max-w-screen-xl mx-auto p-5">
                 <div className="grid">
-                    {/* Imagen */}
+                    {/* Galería de imaxes */}
                     <div className="col-12 md:col-6">
-                        <img src={product.image} alt={product.name} className="w-full border-round-sm" />
+                        <Galleria value={product.images}
+                            responsiveOptions={responsiveOptions}
+                            numVisible={5}
+                            circular
+                            showItemNavigators
+                            showThumbnails
+                            item={itemTemplate}
+                            thumbnail={thumbnailTemplate}
+                            className="border-none"
+                        />
                     </div>
 
-                    {/* Información del producto */}
+                    {/* Información do produto */}
                     <div className="col-12 md:col-6 pl-8">
                         <h1 className="text-8xl font-medium mb-4">
                             {product.name}
@@ -58,6 +107,8 @@ export default function ProductDetail() {
                             </div>
                         </div>
                     </div>
+                    {/* TODO: descripción tocha coas fotos chulas */}
+
                 </div>
             </div>
         </section>
