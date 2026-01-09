@@ -15,6 +15,23 @@ export default function ProductDetail() {
         return <p>Producto no encontrado</p>;
     }
 
+    // Crear a lista de imaxes para a galería segundo a cor seleccionada
+    const galleryImages = product.imageFiles.map(file => ({
+        itemImageSrc: `${product.imageBasePath}/${selectedColor.folder}/${file}`,
+        thumbnailImageSrc: `${product.imageBasePath}/${selectedColor.folder}/${file}`,
+        alt: product.name
+    }));
+
+    // Ruta da imaxe de dimensións
+    const dimensionsImage = `${product.imageBasePath}/${product.dimensionsImage}`;
+
+    // Agregar a imaxe de dimensións ao final da galería
+    galleryImages.push({
+        itemImageSrc: dimensionsImage,
+        thumbnailImageSrc: dimensionsImage,
+        alt: "Dimensiones"
+    });
+
     // Opciones responsivas para a galería de imaxes
     const responsiveOptions = [
         {
@@ -35,7 +52,7 @@ export default function ProductDetail() {
     const itemTemplate = (item) => {
         return (
             <img
-                src={item}
+                src={item.itemImageSrc}
                 alt={product.name}
                 className="w-full border-round-sm"
             />
@@ -46,7 +63,7 @@ export default function ProductDetail() {
     const thumbnailTemplate = (item) => {
         return (
             <img
-                src={item}
+                src={item.thumbnailImageSrc}
                 alt={product.name}
                 className="w-full border-round-sm"
             />
@@ -59,15 +76,12 @@ export default function ProductDetail() {
                 <div className="grid">
                     {/* Galería de imaxes */}
                     <div className="col-12 md:col-6">
-                        <Galleria value={product.images}
+                        <Galleria value={galleryImages}
                             responsiveOptions={responsiveOptions}
                             numVisible={5}
                             circular
-                            showItemNavigators
-                            showThumbnails
                             item={itemTemplate}
                             thumbnail={thumbnailTemplate}
-                            className="border-none"
                         />
                     </div>
 

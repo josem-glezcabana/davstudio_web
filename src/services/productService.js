@@ -1,68 +1,58 @@
-import imageUrbanBloom1 from "../assets/seats/urban_bloom/NARANJA/01_AXO.png";
-import imageUrbanBloom2 from "../assets/seats/urban_bloom/NARANJA/02_LATERAL.png";
-import imageUrbanBloom3 from "../assets/seats/urban_bloom/NARANJA/03_FRONTAL.png";
-import imageUrbanBloom4 from "../assets/seats/urban_bloom/NARANJA/04_TRASERA.png";
-import imageUrbanBloom5 from "../assets/seats/urban_bloom/DIMENSIONES.jpg";
-
-import imageNomad01 from "../assets/seats/nomad_01/ROSA/01_AXO.png";
-import imageNomad02 from "../assets/seats/nomad_01/ROSA/02_ABIERTO.png";
-import imageNomad03 from "../assets/seats/nomad_01/ROSA/03_CERRANDOSE.png";
-import imageNomad04 from "../assets/seats/nomad_01/ROSA/04_CERRADO.png";
-import imageNomad05 from "../assets/seats/nomad_01/ROSA/05_FRONTAL.png";
-import imageNomad06 from "../assets/seats/nomad_01/ROSA/06_CENITAL.png";
-import imageNomad07 from "../assets/seats/nomad_01/DIMENSIONES_01.jpg";
-
-// Arrays de imaxes para cada produto
-const imagesUrbanBloom = [
-  imageUrbanBloom1,
-  imageUrbanBloom2,
-  imageUrbanBloom3,
-  imageUrbanBloom4,
-  imageUrbanBloom5
-];
-
-const imagesNomad01 = [
-  imageNomad01,
-  imageNomad02,
-  imageNomad03,
-  imageNomad04,
-  imageNomad05,
-  imageNomad06,
-  imageNomad07
-];
-
-// Datos dos produtos
+// Datos (Mock) dos produtos
 export const products = [
   {
     id: "urban-bloom",
     name: "URBAN BLOOM",
     designer: "David Prol Gómez",
-    mainImage: imageUrbanBloom1,
-    images: imagesUrbanBloom,
+    mainImage: "/seats/urban_bloom/NARANJA/01_AXO.png",
+
+    // * Estrutura para imaxes por colores
+    imageBasePath: "/seats/urban_bloom",
+    imageFiles: [
+      "01_AXO.png",
+      "02_LATERAL.png",
+      "03_FRONTAL.png",
+      "04_TRASERA.png",
+    ],
+    
+    dimensionsImage: "DIMENSIONES.jpg",
     dimensions: "115 x 40 x 95 cm",
     colors: [
-      { name: "Naranja", hex: "#fe9e2e"},
-      { name: "Amarillo", hex: "#fff44f"},
-      { name: "Violeta", hex: "#8a36d2"},
-      { name: "Azul", hex: "#3969be"},
-      { name: "Rojo", hex: "#FF0000"}
+      { name: "Naranja", folder: "NARANJA", hex: "#fe9e2e"},
+      { name: "Amarillo", folder: "AMARILLO", hex: "#fff44f"},
+      { name: "Violeta", folder: "VIOLETA", hex: "#8a36d2"},
+      { name: "Azul", folder: "AZUL", hex: "#3969be"},
+      { name: "Rojo", folder: "ROJO", hex: "#FF0000"}
     ]
   },
   {
     id: "nomad-01",
     name: "NOMAD 01",
     designer: "David Prol Gómez",
-    mainImage: imageNomad01,
-    images: imagesNomad01,
+    mainImage: "/seats/nomad_01/ROSA/01_AXO.png",
+
+    // * Estrutura para imaxes por colores
+    imageBasePath: "/seats/nomad_01",
+    imageFiles: [
+      "01_AXO.png",
+      "02_ABIERTO.png",
+      "03_ABRIENDOSE.png",
+      "04_CERRADO.png",
+      "05_FRONTAL.png",
+      "06_CENITAL.png",
+    ],
+
+    dimensionsImage: "DIMENSIONES.jpg",
     dimensions: "35 x 37 cm",
     colors: [
-      { name: "Rosa", hex: "#e302a6"},
-      { name: "Naranja", hex: "#fe9e2e"},
-      { name: "Azul", hex: "#328AF6FF"},
+      { name: "Rosa", folder: "ROSA", hex: "#e302a6"},
+      { name: "Naranja", folder: "NARANJA", hex: "#fe9e2e"},
+      { name: "Azul", folder: "AZUL", hex: "#328AF6FF"},
     ]
   }
 ];
 
+// Funcións para obter os produtos
 export function getProducts() {
   return products;
 }
