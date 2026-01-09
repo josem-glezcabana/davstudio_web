@@ -5,7 +5,7 @@ export default function ProductCard({ product }) {
         <Link to={`/products/${product.id}`} className="block no-underline text-600 transition-duration-200 hover:text-900">
             {/* Imagen del producto */}
             <div className="mb-3">
-                <img src={product.image} alt={product.name} className="w-full border-round-sm" />
+                <img src={product.mainImage} alt={product.name} className="w-full border-round-sm" />
             </div>
 
             {/* Información del producto */}

@@ -1,39 +1,43 @@
-import imageUrbanBloom1 from "../assets/seats/urban_bloom/Principal.png";
-import imageUrbanBloom2 from "../assets/seats/urban_bloom/FRONTAL.png";
-import imageUrbanBloom3 from "../assets/seats/urban_bloom/LATERAL.png";
-import imageUrbanBloom4 from "../assets/seats/urban_bloom/TRASERA.png";
-import imageUrbanBloom6 from "../assets/seats/urban_bloom/DIMENSIONES_page-0001.jpg";
+import imageUrbanBloom1 from "../assets/seats/urban_bloom/NARANJA/01_AXO.png";
+import imageUrbanBloom2 from "../assets/seats/urban_bloom/NARANJA/02_LATERAL.png";
+import imageUrbanBloom3 from "../assets/seats/urban_bloom/NARANJA/03_FRONTAL.png";
+import imageUrbanBloom4 from "../assets/seats/urban_bloom/NARANJA/04_TRASERA.png";
+import imageUrbanBloom5 from "../assets/seats/urban_bloom/DIMENSIONES.jpg";
 
-import imageNomad01 from "../assets/seats/nomad_01/02.png";
-import imageNomad02 from "../assets/seats/nomad_01/01.png";
-import imageNomad03 from "../assets/seats/nomad_01/03.png";
-import imageNomad04 from "../assets/seats/nomad_01/04.png";
-import imageNomad05 from "../assets/seats/nomad_01/05.png";
-import imageNomad06 from "../assets/seats/nomad_01/DIMENSIONES_01_page-0001.jpg";
+import imageNomad01 from "../assets/seats/nomad_01/ROSA/01_AXO.png";
+import imageNomad02 from "../assets/seats/nomad_01/ROSA/02_ABIERTO.png";
+import imageNomad03 from "../assets/seats/nomad_01/ROSA/03_CERRANDOSE.png";
+import imageNomad04 from "../assets/seats/nomad_01/ROSA/04_CERRADO.png";
+import imageNomad05 from "../assets/seats/nomad_01/ROSA/05_FRONTAL.png";
+import imageNomad06 from "../assets/seats/nomad_01/ROSA/06_CENITAL.png";
+import imageNomad07 from "../assets/seats/nomad_01/DIMENSIONES_01.jpg";
 
+// Arrays de imaxes para cada produto
 const imagesUrbanBloom = [
   imageUrbanBloom1,
   imageUrbanBloom2,
   imageUrbanBloom3,
   imageUrbanBloom4,
-  imageUrbanBloom6
+  imageUrbanBloom5
 ];
 
 const imagesNomad01 = [
   imageNomad01,
-  imageNomad03,
   imageNomad02,
+  imageNomad03,
   imageNomad04,
   imageNomad05,
-  imageNomad06
+  imageNomad06,
+  imageNomad07
 ];
 
+// Datos dos produtos
 export const products = [
   {
     id: "urban-bloom",
     name: "URBAN BLOOM",
     designer: "David Prol Gómez",
-    image: imageUrbanBloom1,
+    mainImage: imageUrbanBloom1,
     images: imagesUrbanBloom,
     dimensions: "115 x 40 x 95 cm",
     colors: [
@@ -48,7 +52,7 @@ export const products = [
     id: "nomad-01",
     name: "NOMAD 01",
     designer: "David Prol Gómez",
-    image: imageNomad01,
+    mainImage: imageNomad01,
     images: imagesNomad01,
     dimensions: "35 x 37 cm",
     colors: [
