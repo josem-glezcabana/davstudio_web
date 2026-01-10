@@ -8,3 +8,15 @@
   --gray-300: #cfcfcf;
   --gray-100: #f5f5f5;
 }
+
+.davstudio-form-button {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    font-family: "Arial Unicode MS", Arial, Helvetica, sans-serif;
+}
+
+.davstudio-form-button:hover {
+    background-color: #222;
+    border-color: #222;
+}
