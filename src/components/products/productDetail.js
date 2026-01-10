@@ -128,7 +128,7 @@ export default function ProductDetail() {
                     <div className="grid align-items-center mb-8">
                         {/* Imagen 1 */}
                         <div className="col-12 md:col-6 flex justify-content-center">
-                            <img src={`${product.imageBasePath}/01.jpg`} alt={product.name} className="w-8 border-round-sm" />
+                            <img src={`${product.imageBasePath}/01.jpg`} alt={product.name} className="w-full border-round-sm" />
                         </div>
                         {/* Texto 1 */}
                         <div className="col-12 md:col-6">
@@ -145,7 +145,7 @@ export default function ProductDetail() {
                     <div className="grid align-items-center">
                         {/* Imagen 2 */}
                         <div className="col-12 md:col-6 flex justify-content-center flex-order-2 md:order-1">
-                            <img src={`${product.imageBasePath}/02.jpg`} alt={product.name} className="w-8 border-round-sm" />
+                            <img src={`${product.imageBasePath}/02.jpg`} alt={product.name} className="w-full border-round-sm" />
                         </div>
                         {/* Texto 2 */}
                         <div className="col-12 md:col-6">
