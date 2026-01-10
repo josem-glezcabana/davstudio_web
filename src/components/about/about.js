@@ -1,12 +1,10 @@
-import ownerPhoto from '../../assets/david_sesi.jpg';
-
 export default function About() {
     return (
         <div className="max-w-screen-xl mx-auto p-5">
             <div className="grid">
                 {/* Imaxe do CEO */}
                 <div className="col-12 lg:col-4 flex justify-content-center">
-                    <img src={ownerPhoto} alt="David" className="w-8 border-round-sm" />
+                    <img src="/assets/about/david_sesi.jpg" alt="David" className="w-8 border-round-sm" />
                 </div>
                 {/* Información do CEO */}
                 <div className="col-12 md:col-8 text-justify text-lg pr-7">

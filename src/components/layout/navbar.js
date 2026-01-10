@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import davstudioLogo from "../../assets/LOGO_DAV.png";
 
 export default function Navbar() {
   return (
@@ -7,7 +6,7 @@ export default function Navbar() {
       <div className="container" style={{ display: "flex", alignItems: "center", justifyContent: "space-around" }}>
         {/* Logo */}
         <Link to="/" className="px-5 py-5 w-3">
-          <img src={davstudioLogo} alt="Estudio de Interiorismo" style={{ width: "100%"}}/>
+          <img src="/assets/logo/LOGO_DAV.png" alt="DAVSTUDIO estudio de Interiorismo" style={{ width: "100%"}}/>
         </Link>
 
         {/* Navegacion */}

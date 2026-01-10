@@ -10,7 +10,7 @@ export default function Home() {
                     muted
                     playsInline
                 >
-                    <source src="/home_background/FULL.mp4" type="video/mp4" />
+                    <source src="/assets/home_background/FULL.mp4" type="video/mp4" />
                     Tu navegador no soporta vídeo HTML5.
                 </video>
             </div>

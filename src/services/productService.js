@@ -4,7 +4,7 @@ export const products = [
     id: "urban-bloom",
     name: "URBAN BLOOM",
     designer: "David Prol Gómez",
-    mainImage: "/seats/urban_bloom/NARANJA/01_AXO.png",
+    mainImage: "/assets/seats/urban_bloom/NARANJA/01_AXO.png",
     longDescription: [
       "Urban Bloom es un asiento urbano que nace del encuentro entre funcionalidad, pausa y ciudad.",
       "Su silueta vertical y contenida se eleva con naturalidad en el espacio público, invitando a detenerse, sentarse y habitar el entorno desde otra velocidad.",
@@ -15,7 +15,7 @@ export const products = [
     ],
 
     // * Estrutura para imaxes por colores
-    imageBasePath: "/seats/urban_bloom",
+    imageBasePath: "/assets/seats/urban_bloom",
     imageFiles: [
       "01_AXO.png",
       "02_LATERAL.png",
@@ -37,7 +37,7 @@ export const products = [
     id: "nomad-01",
     name: "NOMAD 01",
     designer: "David Prol Gómez",
-    mainImage: "/seats/nomad_01/ROSA/01_AXO.png",
+    mainImage: "/assets/seats/nomad_01/ROSA/01_AXO.png",
 
     longDescription: [
       "Nomad 01 es más que un asiento: es un compañero de viaje, una extensión de tu estilo de vida dinámico.",
@@ -50,7 +50,7 @@ export const products = [
     ],
 
     // * Estrutura para imaxes por colores
-    imageBasePath: "/seats/nomad_01",
+    imageBasePath: "/assets/seats/nomad_01",
     imageFiles: [
       "01_AXO.png",
       "02_ABIERTO.png",
