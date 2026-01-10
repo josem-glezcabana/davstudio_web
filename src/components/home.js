@@ -2,10 +2,9 @@ export default function Home() {
     return (
         <div className="flex flex-column">
             {/* Video de fondo */}
-            <div className="w-full overflow-hidden">
+            <div className="w-full">
                 <video
-                    className="w-full"
-                    style={{ height: '70vh', objectFit: 'cover' }}
+                    style={{ objectFit: 'cover' }}
                     autoPlay
                     loop
                     muted
