@@ -73,7 +73,7 @@ export default function ProductDetail() {
     return (
         <section className="surface-0">
             <div className="max-w-screen-xl mx-auto p-5">
-                <div className="grid">
+                <div className="grid pb-8">
                     {/* Galería de imaxes */}
                     <div className="col-12 md:col-6">
                         <Galleria value={galleryImages}
@@ -86,7 +86,7 @@ export default function ProductDetail() {
                     </div>
 
                     {/* Información do produto */}
-                    <div className="col-12 md:col-6 pl-8">
+                    <div className="col-12 md:col-6 pl-8 mb-8">
                         <h1 className="text-8xl font-medium mb-4">
                             {product.name}
                         </h1>
@@ -121,8 +121,43 @@ export default function ProductDetail() {
                             </div>
                         </div>
                     </div>
-                    {/* TODO: descripción tocha coas fotos chulas */}
-
+                </div>
+                {/* Descripción extendida */}
+                <div className="col-12 mt-8">
+                    {/* Imagen y texto de fila 1 */}
+                    <div className="grid align-items-center mb-8">
+                        {/* Imagen 1 */}
+                        <div className="col-12 md:col-6 flex justify-content-center">
+                            <img src={`${product.imageBasePath}/01.jpg`} alt={product.name} className="w-8 border-round-sm" />
+                        </div>
+                        {/* Texto 1 */}
+                        <div className="col-12 md:col-6">
+                            {product.longDescription
+                                .slice(0, Math.ceil(product.longDescription.length / 2))
+                                .map((paragraph, index) => (
+                                    <p key={index} className="text-xl line-height-3" style={{ color: "var(--gray-900)" }}>
+                                        {paragraph}
+                                    </p>
+                                ))}
+                        </div>
+                    </div>
+                    {/* Imagen y texto de fila 2 */}
+                    <div className="grid align-items-center">
+                        {/* Imagen 2 */}
+                        <div className="col-12 md:col-6 flex justify-content-center flex-order-2 md:order-1">
+                            <img src={`${product.imageBasePath}/02.jpg`} alt={product.name} className="w-8 border-round-sm" />
+                        </div>
+                        {/* Texto 2 */}
+                        <div className="col-12 md:col-6">
+                            {product.longDescription
+                                .slice(Math.ceil(product.longDescription.length / 2), product.longDescription.length)
+                                .map((paragraph, index) => (
+                                    <p key={index} className="text-xl line-height-3 align-items-right" style={{ color: "var(--gray-900)" }}>
+                                        {paragraph}
+                                    </p>
+                                ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

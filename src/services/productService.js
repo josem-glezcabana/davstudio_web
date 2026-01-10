@@ -5,6 +5,14 @@ export const products = [
     name: "URBAN BLOOM",
     designer: "David Prol Gómez",
     mainImage: "/seats/urban_bloom/NARANJA/01_AXO.png",
+    longDescription: [
+      "Urban Bloom es un asiento urbano que nace del encuentro entre funcionalidad, pausa y ciudad.",
+      "Su silueta vertical y contenida se eleva con naturalidad en el espacio público, invitando a detenerse, sentarse y habitar el entorno desde otra velocidad.",
+      "Diseñado con una ergonomía intuitiva, Urban Bloom ofrece apoyo en los puntos justos: un asiento cómodo que libera tensión, una superficie auxiliar que acompaña el gesto de leer, apoyar o trabajar brevemente, y una altura pensada para favorecer una postura relajada pero activa.",
+      "Todo en él está pensado para el cuerpo en movimiento, para el uso cotidiano y espontáneo.",
+      "Su geometría clara y amable dialoga con el paisaje urbano sin imponerse, aportando color, identidad y una sensación de orden sereno.",
+      "Urban Bloom transforma rincones de paso en pequeños oasis de descanso, donde la ciudad se vuelve más humana y cercana. Robusto, versátil y atemporal, este asiento no solo cumple una función práctica: crea una experiencia. Un lugar donde florece el descanso urbano, la concentración breve y el placer de sentarse un momento más."
+    ],
 
     // * Estrutura para imaxes por colores
     imageBasePath: "/seats/urban_bloom",
@@ -30,6 +38,16 @@ export const products = [
     name: "NOMAD 01",
     designer: "David Prol Gómez",
     mainImage: "/seats/nomad_01/ROSA/01_AXO.png",
+
+    longDescription: [
+      "Nomad 01 es más que un asiento: es un compañero de viaje, una extensión de tu estilo de vida dinámico.",
+      "Diseñado para moverse contigo, se cuelga al hombro con naturalidad y te acompaña allá donde vayas, listo para desplegarse en cualquier momento de pausa, contemplación o encuentro.",
+      "Su estructura ligera pero resistente combina diseño ergonómico con una estética audaz.",
+      "Las curvas envolventes y los detalles en madera natural ofrecen una experiencia de confort intuitivo, mientras que su forma escultórica lo convierte en una pieza que no pasa desapercibida.",
+      "Ideal para festivales, parques, terrazas urbanas o interiores creativos, Nomad 01 se adapta a cada entorno con soltura.",
+      "Su presencia colorida y su funcionalidad nómada invitan a redescubrir el acto de sentarse como un gesto libre, espontáneo y lleno de intención.",
+      "Con Nomad 01, el asiento va contigo. Tú decides dónde empieza el descanso."
+    ],
 
     // * Estrutura para imaxes por colores
     imageBasePath: "/seats/nomad_01",
