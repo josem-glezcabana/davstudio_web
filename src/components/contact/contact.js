@@ -112,7 +112,7 @@ export default function Contact() {
                 <p className="m-4 line-height-3 text-justify text-lg">
                     Email: davidprolgomez@gmail.com
                 <br/>
-                    Teléfono: +34 675 638 685.
+                    Teléfono: +34 675 638 685
                 </p>
                 <p className="m-4 line-height-3 text-justify text-lg">
                     En DAVSTUDIO, tu satisfacción es nuestra prioridad.

@@ -52,6 +52,8 @@ export const products = [
     // * Estrutura para imaxes por colores
     imageBasePath: "/assets/seats/nomad_01",
     imageFiles: [
+      "Montada-Compacta.gif",
+      "Montada-Extendida.gif",
       "01_AXO.png",
       "02_ABIERTO.png",
       "03_ABRIENDOSE.png",
